@@ -130,7 +130,7 @@ export default function Products({}: Props) {
               {record.images.map((image: any, index: number) => (
                 <img
                   key={index}
-                  src={`https://product-management-api-tau.vercel.app/${image.location}`}
+                  src={`${process.env.REACT_APP_BASE_URL}${image.location}`}
                   alt={`product-${index}`}
                   width="50px"
                   style={{ marginRight: "10px", marginBottom: "10px" }}
