@@ -130,7 +130,7 @@ export default function Products({}: Props) {
               {record.images.map((image: any, index: number) => (
                 <img
                   key={index}
-                  src={`https://batch-33-nodejs-user.vercel.app/${image.location}`}
+                  src={`https://product-management-api-tau.vercel.app/${image.location}`}
                   alt={`product-${index}`}
                   width="50px"
                   style={{ marginRight: "10px", marginBottom: "10px" }}
